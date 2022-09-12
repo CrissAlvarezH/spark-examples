@@ -9,4 +9,4 @@ RUN mv postgresql-42.2.5.jar /opt/spark/jars
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 
-COPY ./src/main.py .
+COPY ./src/ .

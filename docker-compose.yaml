@@ -4,7 +4,7 @@ services:
 
     app:
         build: .
-        command: driver local:///opt/application/main.py 
+        command: driver local:///opt/application/${MODULE}/main.py 
         env_file:
             - .env
 

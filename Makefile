@@ -1,8 +1,8 @@
 build:
 	docker compose build
 
-run: build
-	docker compose up app
+run-snowflake-connection: build
+	export MODULE=snowflake-connection; docker compose up app
 
 down:
 	docker compose down
